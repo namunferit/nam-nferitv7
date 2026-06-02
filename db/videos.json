@@ -1,0 +1,38 @@
+[
+  {
+    "id": "vid-1",
+    "title": "Bir Şehrin Sessiz Tanıkları",
+    "description": "Şehrin eski sakinleriyle yaptığımız röportajlar serisinin ilk bölümü.",
+    "categoryId": "cat-roportaj",
+    "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "thumbnail": "images/article4.png",
+    "duration": "18 dk",
+    "status": "published",
+    "createdAt": "2025-05-15T14:00:00.000Z",
+    "deletedAt": null
+  },
+  {
+    "id": "vid-2",
+    "title": "Sokak Sohbetleri: Ne Düşünüyorsun?",
+    "description": "Sokaktaki insanlara hayatın anlamını ve dijitalleşmenin getirdiklerini sorduk.",
+    "categoryId": "cat-sokak",
+    "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "thumbnail": "images/article2.png",
+    "duration": "12 dk",
+    "status": "published",
+    "createdAt": "2025-05-14T16:00:00.000Z",
+    "deletedAt": null
+  },
+  {
+    "id": "vid-3",
+    "title": "Yazmak Üzerine: Bir Yazarla Sohbet",
+    "description": "Yazma eyleminin kökenlerini ve bir hikayenin nasıl oluştuğunu tartıştık.",
+    "categoryId": "cat-sohbet",
+    "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "thumbnail": "images/article1.png",
+    "duration": "24 dk",
+    "status": "published",
+    "createdAt": "2025-05-10T11:00:00.000Z",
+    "deletedAt": null
+  }
+]

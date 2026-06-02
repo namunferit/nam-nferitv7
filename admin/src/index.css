@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-burgundy: #cb113a;
+  --color-burgundy-light: #e61442;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, sans-serif;
+}
+
+/* Animations */
+@keyframes slide-in {
+  from {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}
+
+.animate-scale-up {
+  animation: scale-up 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}

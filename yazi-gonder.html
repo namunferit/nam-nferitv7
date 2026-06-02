@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nâmünferit'e yazı gönderin. Herkes yazabilir, editör ekibimiz değerlendirir.">
+  <title>Yazı Gönder — Nâmünferit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo" style="display:flex;align-items:center;"><img src="images/logo.png" alt="Nâmünferit" style="height: 90px; width: auto; border-radius: 4px;"></a>
+      <div class="nav-links">
+        <a href="yazilar.html">Yazılar</a><a href="videolar.html">Videolar</a>
+        <a href="yazi-gonder.html">Yazı Gönder</a><a href="hakkimizda.html">Hakkımızda</a><a href="topluluk.html">Katıl</a>
+      </div>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-close" id="mobileClose">✕</div>
+    <a href="index.html">Ana Sayfa</a><a href="yazilar.html">Yazılar</a><a href="videolar.html">Videolar</a>
+    <a href="yazi-gonder.html">Yazı Gönder</a><a href="hakkimizda.html">Hakkımızda</a><a href="topluluk.html">Katıl</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-tag" style="color:var(--burgundy-light);">Yazar Ol</p>
+      <h1 class="page-hero-title">Nâmünferit'e Yaz</h1>
+      <p class="page-hero-desc">Herkes yazı gönderebilir. Editör ekibimiz her yazıyı özenle değerlendirir. Seçilen yazılar platformda yayınlanır.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container-narrow">
+      <form id="submitForm">
+        <div class="form-error" id="formError"></div>
+        <div class="form-group">
+          <label class="form-label" for="authorName">İsim</label>
+          <input type="text" id="authorName" class="form-input" placeholder="Adınız ve soyadınız" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="authorEmail">E-posta</label>
+          <input type="email" id="authorEmail" class="form-input" placeholder="ornek@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="articleTitle">Yazı Başlığı</label>
+          <input type="text" id="articleTitle" class="form-input" placeholder="Yazınızın başlığı" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="articleCategory">Kategori</label>
+          <select id="articleCategory" class="form-select" required>
+            <option value="" disabled selected>Kategori seçin</option>
+            <option value="insan">İnsan</option>
+            <option value="sehir">Şehir</option>
+            <option value="fikir">Fikir</option>
+            <option value="kultur">Kültür</option>
+            <option value="deneme">Deneme</option>
+            <option value="hikaye">Hikâye</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="articleBody">Yazı Metni</label>
+          <textarea id="articleBody" class="form-textarea" placeholder="Yazınızı buraya yazın..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Dosya Ekle <span style="font-weight:400;color:var(--gray);font-size:0.85rem;">(Opsiyonel — Görsel, PDF, Word)</span></label>
+          <div id="fileDropZone" style="border: 2px dashed var(--gray); border-radius: 12px; padding: 40px 20px; text-align: center; cursor: pointer; transition: all 0.3s ease; background: var(--off-white);">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;fill:var(--gray);margin-bottom:12px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+            <p style="font-size:0.95rem;color:var(--charcoal);margin-bottom:6px;font-weight:500;">Dosyalarınızı sürükleyip bırakın</p>
+            <p style="font-size:0.8rem;color:var(--gray);">veya <span style="color:var(--burgundy);font-weight:600;text-decoration:underline;">dosya seçmek için tıklayın</span></p>
+            <p style="font-size:0.7rem;color:var(--gray);margin-top:8px;">Maks. 10MB · JPG, PNG, PDF, DOCX</p>
+            <input type="file" id="fileInput" multiple accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx" style="display:none;">
+          </div>
+          <div id="fileList" style="margin-top:12px;display:flex;flex-direction:column;gap:8px;"></div>
+        </div>
+        <div class="form-group">
+          <div class="form-checkbox">
+            <input type="checkbox" id="consent" required>
+            <label for="consent">Yazımın Nâmünferit editör ekibi tarafından değerlendirilmesini ve uygun görülmesi halinde platformda yayınlanmasını kabul ediyorum.</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Yazıyı Gönder</button>
+      </form>
+
+      <div class="form-success">
+        <div class="form-success-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+        <h2 class="form-success-title">Yazınız Alındı</h2>
+        <p class="form-success-desc">Editör ekibimiz yazınızı inceleyecek. Değerlendirme sonucu e-posta ile bildirilecektir.</p>
+        <a href="index.html" class="btn btn-outline" style="margin-top:32px;">Ana Sayfaya Dön</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 Nâmünferit. Tüm hakları saklıdır.</span>
+        <span class="footer-manifesto">"Yerçekimine değil, fikre bağlıyız."</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js?v=2"></script>
+  <script>
+    // Dosya Yükleme İşlevselliği
+    const dropZone = document.getElementById('fileDropZone');
+    const fileInput = document.getElementById('fileInput');
+    const fileList = document.getElementById('fileList');
+    let uploadedFiles = [];
+
+    if (dropZone && fileInput) {
+      dropZone.addEventListener('click', () => fileInput.click());
+
+      dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropZone.style.borderColor = '#cb113a';
+        dropZone.style.background = '#fdf0f2';
+      });
+
+      dropZone.addEventListener('dragleave', () => {
+        dropZone.style.borderColor = '';
+        dropZone.style.background = '';
+      });
+
+      dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.style.borderColor = '';
+        dropZone.style.background = '';
+        handleFiles(e.dataTransfer.files);
+      });
+
+      fileInput.addEventListener('change', () => {
+        handleFiles(fileInput.files);
+      });
+    }
+
+    function handleFiles(files) {
+      Array.from(files).forEach(file => {
+        if (file.size > 10 * 1024 * 1024) {
+          alert(file.name + ' dosyası 10MB limitini aşıyor.');
+          return;
+        }
+        uploadedFiles.push(file);
+        renderFileList();
+      });
+    }
+
+    function renderFileList() {
+      fileList.innerHTML = '';
+      uploadedFiles.forEach((file, index) => {
+        const icon = file.type.startsWith('image/') ? '🖼️' : (file.type === 'application/pdf' ? '📄' : '📎');
+        const size = (file.size / 1024).toFixed(0) + ' KB';
+        const item = document.createElement('div');
+        item.style.cssText = 'display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:#fff;border:1px solid #e8e4df;border-radius:8px;';
+        item.innerHTML = '<div style="display:flex;align-items:center;gap:10px;"><span style="font-size:1.3rem;">' + icon + '</span><div><p style="font-size:0.85rem;font-weight:500;color:#1a1a1a;margin:0;">' + file.name + '</p><p style="font-size:0.7rem;color:#999;margin:0;">' + size + '</p></div></div><button onclick="removeFile(' + index + ')" style="background:none;border:none;cursor:pointer;font-size:1.1rem;color:#999;padding:4px 8px;" title="Kaldır">✕</button>';
+        fileList.appendChild(item);
+      });
+    }
+
+    function removeFile(index) {
+      uploadedFiles.splice(index, 1);
+      renderFileList();
+    }
+  </script>
+</body>
+</html>

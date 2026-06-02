@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "Nâmünferit — Dijital Kültür Platformu",
+    "description": "Nâmünferit — Yerçekimine değil fikre bağlıyız. Bağımsız dijital medya ve fikir platformu.",
+    "logo": "images/logo.png",
+    "favicon": ""
+  },
+  "colors": {
+    "burgundy": "#cb113a",
+    "burgundyLight": "#e61442",
+    "black": "#1a1a1a",
+    "cream": "#f5f0eb",
+    "offWhite": "#faf7f2"
+  },
+  "fonts": {
+    "serif": "Playfair Display",
+    "sans": "Inter"
+  },
+  "hero": {
+    "title": "Böylece dünya,<br> birlikte yaşanan bir yer<br> olmaktan çok,<br><em>birlikte ayrı kalınan</em><br> bir sahneye dönüşüyor.",
+    "description": "Düşüncelerin, hikâyelerin ve üretimlerin görünür olduğu bağımsız bir dijital kültür platformu.",
+    "buttonText": "Keşfet"
+  },
+  "homepage": {
+    "articlesCount": 3,
+    "videosCount": 3
+  },
+  "social": {
+    "youtube": "https://www.youtube.com/@namunferit",
+    "x": "https://x.com/namunferit",
+    "tiktok": "https://www.tiktok.com/@namunferit?_r=1&_t=ZS-96Ya16rdJHI",
+    "instagram": "https://www.instagram.com/namunferit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "email": "info@namunferit.com"
+  },
+  "appsScriptUrl": "https://script.google.com/macros/s/AKfycbw..."
+}

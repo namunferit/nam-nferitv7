@@ -1,0 +1,32 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*).css",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/(.*).js",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/yazilar", "destination": "/yazilar.html" },
+    { "source": "/videolar", "destination": "/videolar.html" },
+    { "source": "/yazi-gonder", "destination": "/yazi-gonder.html" },
+    { "source": "/yazi-detay", "destination": "/yazi-detay.html" },
+    { "source": "/hakkimizda", "destination": "/hakkimizda.html" },
+    { "source": "/topluluk", "destination": "/topluluk.html" }
+  ]
+}

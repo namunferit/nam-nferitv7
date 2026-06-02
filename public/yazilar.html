@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nâmünferit — Yerçekimine değil fikre bağlıyız. Bağımsız dijital medya ve fikir platformu.">
+  <title>Yazılar — Nâmünferit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo" style="display:flex;align-items:center;"><img src="images/logo.png" alt="Nâmünferit" style="height: 90px; width: auto; border-radius: 4px;"></a>
+      <div class="nav-links">
+        <a href="yazilar.html">Yazılar</a>
+        <a href="videolar.html">Videolar</a>
+        <a href="yazi-gonder.html">Yazı Gönder</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="topluluk.html">Katıl</a>
+      </div>
+      <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-close" id="mobileClose">✕</div>
+    <a href="index.html">Ana Sayfa</a><a href="yazilar.html">Yazılar</a><a href="videolar.html">Videolar</a>
+    <a href="yazi-gonder.html">Yazı Gönder</a><a href="hakkimizda.html">Hakkımızda</a><a href="topluluk.html">Katıl</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-tag" style="color:var(--burgundy-light);">Dijital Dergi</p>
+      <h1 class="page-hero-title">Yazılar</h1>
+      <p class="page-hero-desc">Düşüncenin, hikâyenin ve kültürün buluştuğu editorial alan.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="category-filter">
+        <button class="category-btn active" data-category="all">Tümü</button>
+        <button class="category-btn" data-category="insan">İnsan</button>
+        <button class="category-btn" data-category="sehir">Şehir</button>
+        <button class="category-btn" data-category="fikir">Fikir</button>
+        <button class="category-btn" data-category="kultur">Kültür</button>
+        <button class="category-btn" data-category="deneme">Deneme</button>
+        <button class="category-btn" data-category="hikaye">Hikâye</button>
+      </div>
+      <div class="articles-grid">
+        <a href="yazi-detay-sessizligin-dili-modern-dunyada-dusuncenin-kaybolmasi.html" class="article-card" data-category="fikir">
+          <div style="overflow:hidden;border-radius:4px;"><img src="images/article1.png" alt="Sessizliğin Dili: Modern Dünyada Düşüncenin Kaybolması" class="article-card-img"></div>
+          <div class="article-card-body">
+            <p class="article-card-cat">Fikir</p>
+            <h3 class="article-card-title">Sessizliğin Dili: Modern Dünyada Düşüncenin Kaybolması</h3>
+            <div class="article-card-meta"><span>Elif Yıldız</span><span>8 dk okuma</span></div>
+          </div>
+        </a>
+        <a href="yazi-detay-sokaklarin-hafizasi-kaybolmaya-yuz-tutan-mahalleler.html" class="article-card" data-category="sehir">
+          <div style="overflow:hidden;border-radius:4px;"><img src="images/article2.png" alt="Sokakların Hafızası: Kaybolmaya Yüz Tutan Mahalleler" class="article-card-img"></div>
+          <div class="article-card-body">
+            <p class="article-card-cat">Şehir</p>
+            <h3 class="article-card-title">Sokakların Hafızası: Kaybolmaya Yüz Tutan Mahalleler</h3>
+            <div class="article-card-meta"><span>Mert Aydın</span><span>6 dk okuma</span></div>
+          </div>
+        </a>
+        <a href="yazi-detay-kahve-ve-konusma-kayip-rituellerin-izinde.html" class="article-card" data-category="kultur">
+          <div style="overflow:hidden;border-radius:4px;"><img src="images/article3.png" alt="Kahve ve Konuşma: Kayıp Ritüellerin İzinde" class="article-card-img"></div>
+          <div class="article-card-body">
+            <p class="article-card-cat">Kültür</p>
+            <h3 class="article-card-title">Kahve ve Konuşma: Kayıp Ritüellerin İzinde</h3>
+            <div class="article-card-meta"><span>Zeynep Kara</span><span>5 dk okuma</span></div>
+          </div>
+        </a>
+        <a href="yazi-detay-gece-yarisi-dusunceleri-uykusuzlugun-felsefesi.html" class="article-card" data-category="deneme">
+          <div style="overflow:hidden;border-radius:4px;"><img src="images/article4.png" alt="Gece Yarısı Düşünceleri: Uykusuzluğun Felsefesi" class="article-card-img"></div>
+          <div class="article-card-body">
+            <p class="article-card-cat">Deneme</p>
+            <h3 class="article-card-title">Gece Yarısı Düşünceleri: Uykusuzluğun Felsefesi</h3>
+            <div class="article-card-meta"><span>Can Demir</span><span>7 dk okuma</span></div>
+          </div>
+        </a>
+        <a href="yazi-detay-gorunmez-emekciler-sehrin-gizli-kahramanlari.html" class="article-card" data-category="insan">
+          <div style="overflow:hidden;border-radius:4px;"><img src="images/article3.png" alt="Görünmez Emekçiler: Şehrin Gizli Kahramanları" class="article-card-img"></div>
+          <div class="article-card-body">
+            <p class="article-card-cat">İnsan</p>
+            <h3 class="article-card-title">Görünmez Emekçiler: Şehrin Gizli Kahramanları</h3>
+            <div class="article-card-meta"><span>Ayşe Toprak</span><span>10 dk okuma</span></div>
+          </div>
+        </a>
+        <a href="yazi-detay-son-mektup-yazilmamis-bir-vedanin-hikayesi.html" class="article-card" data-category="hikaye">
+          <div style="overflow:hidden;border-radius:4px;"><img src="images/article1.png" alt="Son Mektup: Yazılmamış Bir Vedanın Hikâyesi" class="article-card-img"></div>
+          <div class="article-card-body">
+            <p class="article-card-cat">Hikâye</p>
+            <h3 class="article-card-title">Son Mektup: Yazılmamış Bir Vedanın Hikâyesi</h3>
+            <div class="article-card-meta"><span>Deniz Yılmaz</span><span>12 dk okuma</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 Nâmünferit. Tüm hakları saklıdır.</span>
+        <span class="footer-manifesto">"Yerçekimine değil, fikre bağlıyız."</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js?v=2"></script>
+</body>
+</html>

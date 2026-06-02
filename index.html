@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nâmünferit — Yerçekimine değil fikre bağlıyız. Bağımsız dijital medya ve fikir platformu.">
+  <title>Nâmünferit — Dijital Kültür Platformu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo" style="display:flex;align-items:center;"><img src="images/logo.png" alt="Nâmünferit" style="height: 90px; width: auto; border-radius: 4px;"></a>
+      <div class="nav-links">
+        <a href="yazilar.html">Yazılar</a>
+        <a href="videolar.html">Videolar</a>
+        <a href="yazi-gonder.html">Yazı Gönder</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="topluluk.html">Katıl</a>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-close" id="mobileClose">✕</div>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="yazilar.html">Yazılar</a>
+    <a href="videolar.html">Videolar</a>
+    <a href="yazi-gonder.html">Yazı Gönder</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="topluluk.html">Katıl</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title" style="font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.3;">Böylece dünya,<br> birlikte yaşanan bir yer<br> olmaktan çok,<br><em>birlikte ayrı kalınan</em><br> bir sahneye dönüşüyor.</h1>
+      <p class="hero-desc">Düşüncelerin, hikâyelerin ve üretimlerin görünür olduğu bağımsız bir dijital kültür platformu.</p>
+    </div>
+    <div class="hero-scroll">
+      <span>Keşfet</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SON YAZILAR -->
+  <section class="section" id="yazilar">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Son Yazılar</p>
+        <h2 class="section-title">Dijital Dergi</h2>
+        <p class="section-desc">Düşüncenin ve hikâyenin buluştuğu editorial alan.</p>
+      </div>
+      <div class="articles-grid">
+        <a href="yazi-detay.html" class="article-card" data-category="fikir">
+          <div style="overflow:hidden;border-radius:4px;">
+            <img src="images/article1.png" alt="Yazı görseli" class="article-card-img">
+          </div>
+          <div class="article-card-body">
+            <p class="article-card-cat">Fikir</p>
+            <h3 class="article-card-title">Sessizliğin Dili: Modern Dünyada Düşüncenin Kaybolması</h3>
+            <div class="article-card-meta">
+              <span>Elif Yıldız</span>
+              <span>8 dk okuma</span>
+            </div>
+          </div>
+        </a>
+        <a href="yazi-detay.html" class="article-card" data-category="sehir">
+          <div style="overflow:hidden;border-radius:4px;">
+            <img src="images/article2.png" alt="Yazı görseli" class="article-card-img">
+          </div>
+          <div class="article-card-body">
+            <p class="article-card-cat">Şehir</p>
+            <h3 class="article-card-title">Sokakların Hafızası: Kaybolmaya Yüz Tutan Mahalleler</h3>
+            <div class="article-card-meta">
+              <span>Mert Aydın</span>
+              <span>6 dk okuma</span>
+            </div>
+          </div>
+        </a>
+        <a href="yazi-detay.html" class="article-card" data-category="kultur">
+          <div style="overflow:hidden;border-radius:4px;">
+            <img src="images/article3.png" alt="Yazı görseli" class="article-card-img">
+          </div>
+          <div class="article-card-body">
+            <p class="article-card-cat">Kültür</p>
+            <h3 class="article-card-title">Kahve ve Konuşma: Kayıp Ritüellerin İzinde</h3>
+            <div class="article-card-meta">
+              <span>Zeynep Kara</span>
+              <span>5 dk okuma</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:48px;" class="reveal">
+        <a href="yazilar.html" class="btn btn-outline">Tüm Yazılar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SON VİDEOLAR -->
+  <section class="section section-dark" id="videolar">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Son Videolar</p>
+        <h2 class="section-title">Ekrandan Ekrana</h2>
+        <p class="section-desc">Röportajlar, sohbetler ve sokak hikayeleri.</p>
+      </div>
+      <div class="videos-grid">
+        <div class="video-card" onclick="window.open('https://youtube.com','_blank')">
+          <div class="video-card-thumb-wrap">
+            <img src="images/article4.png" alt="Video önizleme" class="video-card-thumb">
+            <div class="video-play-icon">
+              <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">Bir Şehrin Sessiz Tanıkları</h3>
+            <p class="video-card-meta">Röportaj · 18 dk</p>
+          </div>
+        </div>
+        <div class="video-card" onclick="window.open('https://youtube.com','_blank')">
+          <div class="video-card-thumb-wrap">
+            <img src="images/article2.png" alt="Video önizleme" class="video-card-thumb">
+            <div class="video-play-icon">
+              <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">Sokak Sohbetleri: Ne Düşünüyorsun?</h3>
+            <p class="video-card-meta">Sokak · 12 dk</p>
+          </div>
+        </div>
+        <div class="video-card" onclick="window.open('https://youtube.com','_blank')">
+          <div class="video-card-thumb-wrap">
+            <img src="images/article1.png" alt="Video önizleme" class="video-card-thumb">
+            <div class="video-play-icon">
+              <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+            </div>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">Yazmak Üzerine: Bir Yazarla Sohbet</h3>
+            <p class="video-card-meta">Sohbet · 24 dk</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px;" class="reveal">
+        <a href="videolar.html" class="btn btn-outline-light">Tüm Videolar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÖNE ÇIKAN SOHBET -->
+  <section class="section" id="sohbet">
+    <div class="container">
+      <div class="featured-talk reveal">
+        <img src="images/article3.png" alt="Öne çıkan sohbet" class="featured-talk-img">
+        <div class="featured-talk-content">
+          <p class="section-tag">Öne Çıkan Sohbet</p>
+          <h2 class="featured-talk-title">Üretmek, Var Olmaktır</h2>
+          <p class="featured-talk-desc">Dijital çağda bağımsız üretimin anlamını ve topluluk olarak büyümenin gücünü konuştuğumuz özel sohbet serimiz.</p>
+          <a href="videolar.html" class="btn btn-outline">İzle</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAKKIMIZDA KISA -->
+  <section class="section" id="hakkinda" style="background-color: var(--burgundy); color: var(--cream);">
+    <div class="container">
+      <div class="about-home reveal">
+        <div class="about-home-text">
+          <p class="section-tag" style="color: var(--cream); opacity: 0.8;">Platform Hakkında</p>
+          <h2 class="section-title">Bir Düşünce Hareketi</h2>
+          <p class="section-desc" style="margin-top:20px; color: var(--cream); opacity: 0.9;">Nâmünferit; YouTube, Instagram ve yazılı içerik üretimini birleştiren bağımsız bir dijital medya ve fikir platformudur. Amacımız, insanların düşüncelerini, hikâyelerini ve üretimlerini görünür kılmak.</p>
+          <a href="hakkimizda.html" class="btn btn-outline-light" style="margin-top:28px;">Devamını Oku</a>
+        </div>
+        <div>
+          <blockquote class="about-home-quote" style="color: var(--cream); border-left-color: var(--cream);">
+            "Bir düşünce hareketi, bir sayfa ile başlar. Biz o sayfayı açtık."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YAZI GÖNDER CTA -->
+  <section class="cta-section">
+    <div class="container reveal">
+      <p class="section-tag" style="color:var(--burgundy-light);margin-bottom:20px;">Yazı Gönder</p>
+      <h2 class="cta-title">Nâmünferit'e Yaz</h2>
+      <p class="cta-desc">Herkes yazabilir. Sesinizi duyurun, hikâyenizi paylaşın. Editör ekibimiz her yazıyı özenle değerlendirir.</p>
+      <a href="yazi-gonder.html" class="btn btn-primary">Yazı Gönder</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">Nâmünferit</div>
+          <p class="footer-brand-desc">Düşüncelerin, hikâyelerin ve üretimlerin görünür olduğu bağımsız dijital kültür platformu.</p>
+          <div class="footer-social" style="margin-top:20px;">
+            <a href="https://www.youtube.com/@namunferit" target="_blank" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://x.com/namunferit" target="_blank" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@namunferit" target="_blank" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.52a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.27a8.16 8.16 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.7z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/namunferit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="mailto:info@namunferit.com" aria-label="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Keşfet</h4>
+          <div class="footer-links">
+            <a href="yazilar.html">Yazılar</a>
+            <a href="videolar.html">Videolar</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Katıl</h4>
+          <div class="footer-links">
+            <a href="yazi-gonder.html">Yazı Gönder</a>
+            <a href="topluluk.html">Topluluk</a>
+            <a href="topluluk.html">İşbirliği</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Kategoriler</h4>
+          <div class="footer-links">
+            <a href="yazilar.html">İnsan</a>
+            <a href="yazilar.html">Şehir</a>
+            <a href="yazilar.html">Fikir</a>
+            <a href="yazilar.html">Kültür</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nâmünferit. Tüm hakları saklıdır.</span>
+        <span class="footer-manifesto">"Yerçekimine değil, fikre bağlıyız."</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

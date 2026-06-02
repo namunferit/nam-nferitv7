@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cat-insan",
+    "name": "İnsan",
+    "slug": "insan",
+    "type": "article"
+  },
+  {
+    "id": "cat-sehir",
+    "name": "Şehir",
+    "slug": "sehir",
+    "type": "article"
+  },
+  {
+    "id": "cat-fikir",
+    "name": "Fikir",
+    "slug": "fikir",
+    "type": "article"
+  },
+  {
+    "id": "cat-kultur",
+    "name": "Kültür",
+    "slug": "kultur",
+    "type": "article"
+  },
+  {
+    "id": "cat-deneme",
+    "name": "Deneme",
+    "slug": "deneme",
+    "type": "article"
+  },
+  {
+    "id": "cat-hikaye",
+    "name": "Hikâye",
+    "slug": "hikaye",
+    "type": "article"
+  },
+  {
+    "id": "cat-roportaj",
+    "name": "Röportaj",
+    "slug": "roportaj",
+    "type": "video"
+  },
+  {
+    "id": "cat-sohbet",
+    "name": "Sohbet",
+    "slug": "sohbet",
+    "type": "video"
+  },
+  {
+    "id": "cat-sokak",
+    "name": "Sokak",
+    "slug": "sokak",
+    "type": "video"
+  }
+]
