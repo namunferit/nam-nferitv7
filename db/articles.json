@@ -1,18 +1,18 @@
 [
   {
     "id": "art-1",
-    "title": "Sessizliğin Dili: Modern Dünyada Düşüncenin Kaybolması",
+    "title": "Sessizliğin Dili: Modern Dünyada Düşüncenin Kaybı",
     "slug": "sessizligin-dili-modern-dunyada-dusuncenin-kaybolmasi",
-    "author": "Elif Yıldız",
+    "author": "Selimhan",
     "authorBio": "Kültür ve düşünce yazarı. İstanbul'da yaşıyor, sessizliğin dilini arıyor.",
     "categoryId": "cat-fikir",
     "content": "<p>Modern dünya, sesle dolu bir sessizlik yaşıyor. Her yerde bilgi var ama düşünce yok. Her yerde konuşma var ama diyalog yok. Dijital çağın en büyük paradoksu belki de budur: hiç olmadığı kadar bağlıyız, ama hiç olmadığı kadar yalnızız.</p><p>Sosyal medyanın sürekli akan nehirlerinde kaybolmuş düşünceler, 280 karaktere sığdırılmaya çalışılan fikirler ve anlık tepkilerle şekillenen kamuoyu… Bunlar çağımızın gerçekleri. Peki bu gürültünün içinde düşünmek için nasıl alan açabiliriz?</p><blockquote>\"Gerçek düşünce, sessizliğin içinde doğar. Gürültü ancak var olanı tekrar eder.\"</blockquote><p>Antik filozoflardan bugünün bağımsız düşünürlerine kadar, sessizlik hep yaratıcılığın ve derinliğin kaynağı olmuştur. Thoreau'nun Walden Gölü'ne çekilmesi, Montaigne'in kulesine kapanması — bunlar kaçış değil, düşüncenin kendine alan açma çabasıydı.</p><p>Bugün aynı çabayı dijital dünyada sürdürüyoruz. Nâmünferit olarak inandığımız şey tam da bu: düşünceye alan açmak. Sessizliği bir zayıflık değil, bir güç olarak görmek. Yazmayı, konuşmayı ve üretmeyi — ama düşünerek yapmayı savunmak.</p><p>Bu yazı da bir davettir. Durmaya, düşünmeye ve belki de sessizliğin dilini yeniden öğrenmeye bir davet.</p>",
-    "coverImage": "images/article1.png",
-    "readTime": 8,
-    "status": "published",
+    "coverImage": "/uploads/1024x768-px-nevermore-poetry-raven-typography-word-clouds-661861-1780429220459.webp",
+    "readTime": 1,
+    "status": "draft",
     "featured": true,
     "createdAt": "2025-05-15T12:00:00.000Z",
-    "updatedAt": "2025-05-15T12:00:00.000Z",
+    "updatedAt": "2026-06-02T19:40:52.706Z",
     "deletedAt": null
   },
   {

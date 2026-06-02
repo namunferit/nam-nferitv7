@@ -34,5 +34,17 @@
     "status": "published",
     "createdAt": "2025-05-10T11:00:00.000Z",
     "deletedAt": null
+  },
+  {
+    "id": "vid-1780429322947",
+    "title": "deneme",
+    "description": "test videosudur",
+    "categoryId": "cat-roportaj",
+    "embedUrl": "https://www.youtube.com/watch?v=hI8koTliaOY",
+    "thumbnail": "images/article4.png",
+    "duration": "15 dk",
+    "status": "published",
+    "createdAt": "2026-06-02T19:42:02.947Z",
+    "deletedAt": null
   }
 ]
